@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/tic-tac-toe.css">
+	<script type="text/javascript" src="js/tic-tac-toe.js"></script>
+</head>
+
+<body onload="startGame();">
+
+<h1>Tic Tac Toe</h1>
+
+	<!-- <button id = "reset">Let's try again!!!</button> -->
+	<h1 class = "Which player">Hey X, you go first!</h1>	
+	<div id ="message"></div> 
+
+	<table>
+			<tr>
+				<td id = "s1" class = "box" onclick="nextMove(this)"></td>
+				<td id = "s2" class = "box" onclick="nextMove(this)"></td>
+				<td id = "s3" class = "box" onclick="nextMove(this)"></td>
+			</tr>
+			<tr>
+				<td id = "s4" class = "box" onclick="nextMove(this)"></td>
+				<td id = "s5" class = "box" onclick="nextMove(this)"></td>
+				<td id = "s6" class = "box" onclick="nextMove(this)"></td>
+			</tr>
+			<tr>
+				<td id = "s7" class = "box" onclick="nextMove(this)"></td>
+				<td id = "s8" class = "box" onclick="nextMove(this)"></td>
+				<td id = "s9" class = "box" onclick="nextMove(this)"></td>
+			</tr>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+button {
+border: 2px solid black;
+display: block;
+margin: auto;
+height: 50px;
+font-size: 25px;
+background-color: #0099ff;
+}
+
+h1{
+text-align: center;
+}
+
+.box {
+border: 3px solid black;
+height: 200px;
+width: 200px;
+font-size: 150px;
+text-align: center;
+color: red;
+}
+
+body{
+background-color: grey;
+}
+
+table{
+margin: auto;
+border: 20px;
+}
+
