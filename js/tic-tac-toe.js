@@ -1,17 +1,18 @@
 function startGame() {
+	
 	document.turn = 'X';
-
-	setMessage(document.turn + "gets to start.");
+	setMessage(document.turn + " gets to start.");
+	
 }
 
 function setMessage(msg) {
-	document.getElementById("message").innertext = msg;
+	document.getElementById("message").innerText = msg;
 
 }
 
 function nextMove(box) {
 	if (box.textContent == '') {
-		box.textContent = display;
+		box.textContent = document.turn;
 		switchTurn();
 }	else {
 	alert("Oops! Pick another square.");
@@ -19,30 +20,43 @@ function nextMove(box) {
 }
 
 function switchTurn(){
-	if (display == 'X') {
-		display = 'O';
+	if (document.turn == 'X') {
+		document.turn = 'O';
 
 	} else {
-		display = 'X';
-		changeColor();
+		document.turn = 'X';
+		
+	}
+
+	setMessage("Now it's " + document.turn + "'s turn!");
+}
+
+function restartGame() {
+	location.reload();
+}
+
+function changeColor() {
+	if (document.turn == 'X') {
+	
 	}
 
 }
 
-function checkRow (a,b,c,move) {
-	var result = false;
 
-}
+// function checkRow (a,b,c,move) {
+// 	var result = false;
 
-function getBox (number) {
-	return document.getElementById("s" + number).innertext;
+// }
 
-}
+// function getBox (number) {
+// 	return document.getElementById("s" + number).innertext;
+
+// }
 
 
-function changeColor () {
-	document.getElementByClassName('box').style.color = 'blue';
-}
+// function changeColor () {
+// 	document.getElementByClassName('box').style.color = 'blue';
+// }
 
 
 
